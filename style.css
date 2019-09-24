@@ -20,14 +20,19 @@ nav li a{
 nav{
     overflow: hidden;
 }
+nav a:hover{
+    color: #3d5ddb;
+}
 .main-v{
     height: 830px;
     width: 100%;
     background-size: cover;
 }
 .mainTitle{
-    color: yellow;
+    color: #ffbf00;
     text-align: center;
+    font-size: 100px;
+    margin: 200px;
 }
 .main-v p{
     color: white;
@@ -36,10 +41,10 @@ nav{
 
 /*body*/
 .title{
-    color: blue;
+    color: #3d5ddb;
     font-size: 40px;
     text-align: center;
-    margin:40px;
+    margin:50px;
 }
 body{
     width: 100%;
@@ -76,11 +81,13 @@ p{
     
 }
 .intro1{
+    display:auto;
     margin: 0 200px;
    /* background-color: lightpink;*/
     height: 450px;
 }
 .intro2{
+    display:auto;
     margin: 0 200px;
     height: 450px;
     /*background-color: hotpink;*/
@@ -97,21 +104,64 @@ p{
     box-shadow: 0 0 12px gray;
 }
 #bbtn{
-    background-color: blue;
-    border: 1px solid blue;
+    background-color: #3d5ddb;
+    border: 1px solid #3d5ddb;
 }
 #ybtn{
-    background-color: yellow;
-    border: 1px solid yellow;
+    background-color: #ffbf02;
+    border: 1px solid #ffbf02;
 }
 /*course*/
 
 .courses{
-    background-color: aliceblue;
+    background-color: #d5e6f9;
+}
+.container{
+    display:flex;
+    flex-flow: row wrap;
+}
+.container2{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+.item{
+    width: 200px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px;
+    border-radius: 20px;
+}
+.item img{
+    
+    padding: 0 30px;
+}
+.btn2{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 10px;
+}
+.btn2:hover{
+    box-shadow: 0 0 12px gray;
+}
+.btn2{
+    background-color: #3d5ddb;
+    border: 1px solid #3d5ddb;
 }
 
 /*image*/
 
 /*access*/
-
+.map{
+    display:block;
+    margin: 0 auto;
+}
 /*footer*/
+footer p{
+   color: #3d5ddb;
+   text-align: center;
+   padding: 80px 0 0;
+}
