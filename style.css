@@ -47,12 +47,11 @@ body{
 
 /*intro*/
 .rightBox{
-    width: 350px;
-    padding: 50px;
+    width: 550px;
+    float: left;
 }
 .leftBox{
-    width: 350px;
-    padding: 50px;
+    width: 550px;
     float: left;
     
    
@@ -60,29 +59,42 @@ body{
 p{
     line-height: 2.5em;
     font-size: 15px;
+    padding: 30px 80px;
 }
 .introduction{
    
 }
-.introduction img{
-    width: 400px;
-    height: 300px;
+.introduction #img1{
+    width: 450px;
+    height: 350px;
     float: left;
-    margin: 50px;
+   
+}
+.introduction #img2{
+    width: 450px;
+    height: 350px;
+    
 }
 .intro1{
-    margin: 0 auto;
+    margin: 0 200px;
+   /* background-color: lightpink;*/
+    height: 450px;
 }
 .intro2{
-    margin: 0 auto;
-    height: 500px;
+    margin: 0 200px;
+    height: 450px;
+    /*background-color: hotpink;*/
 }
 .btn{
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
-    border-radius: 5px;
-    margin: 30px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 100px;
+    font-size: 20px;
+}
+.btn:hover{
+    box-shadow: 0 0 12px gray;
 }
 #bbtn{
     background-color: blue;
@@ -93,6 +105,10 @@ p{
     border: 1px solid yellow;
 }
 /*course*/
+
+.courses{
+    background-color: aliceblue;
+}
 
 /*image*/
 
