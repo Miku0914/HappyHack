@@ -1,2 +1,101 @@
+/*all*/
+*{
+    margin: 0px;
+    padding: 0;
+    font-family:inherit;
+}
 
 
+/*HEADER*/
+nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 40px;
+    float: right;
+}
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav{
+    overflow: hidden;
+}
+.main-v{
+    height: 830px;
+    width: 100%;
+    background-size: cover;
+}
+.mainTitle{
+    color: yellow;
+    text-align: center;
+}
+.main-v p{
+    color: white;
+    text-align: center;
+}
+
+/*body*/
+.title{
+    color: blue;
+    font-size: 40px;
+    text-align: center;
+    margin:40px;
+}
+body{
+    width: 100%;
+}
+
+/*intro*/
+.rightBox{
+    width: 350px;
+    padding: 50px;
+}
+.leftBox{
+    width: 350px;
+    padding: 50px;
+    float: left;
+    
+   
+}
+p{
+    line-height: 2.5em;
+    font-size: 15px;
+}
+.introduction{
+   
+}
+.introduction img{
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 50px;
+}
+.intro1{
+    margin: 0 auto;
+}
+.intro2{
+    margin: 0 auto;
+    height: 500px;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin: 30px;
+}
+#bbtn{
+    background-color: blue;
+    border: 1px solid blue;
+}
+#ybtn{
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+/*course*/
+
+/*image*/
+
+/*access*/
+
+/*footer*/
