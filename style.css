@@ -1,167 +1,366 @@
 /*all*/
-*{
+* {
     margin: 0px;
     padding: 0;
-    font-family:inherit;
+    font-family: inherit;
+
 }
 
+@font-face {
+    font-family: 'Futura-Boo';
+    src: url(Futura-Boo.ttf);
+
+    font-family: 'Futura-LigObl';
+    src: url(Futura-LigObl.ttf);
+
+    font-family: 'Futura-Bol';
+    src: url(Futura-Bol.ttf);
+
+    font-family: 'Futura-Lug';
+    src: url(Futura-Lig.ttf);
+
+    font-family: 'Futura-BooObl';
+    src: url(Futura-BooObl.ttf);
+
+    font-family: 'Futura-MedObl';
+    src: url(Futura-MedObl.ttf);
+
+    font-family: 'Futura-Med';
+    src: url(Futura-Med.ttf);
+}
+
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
 
 /*HEADER*/
-nav li{
+nav li {
     display: inline-block;
     list-style-type: none;
-    margin-left: 40px;
+    margin-top: 30px;
     float: right;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #fff;
+    font-size: 32px;
+    margin-right: 30px;
+    font-family: 'Futura-Med';
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
-nav{
+
+nav {
     overflow: hidden;
+    margin-right: 40px;
+
 }
-nav a:hover{
+
+nav a:hover {
     color: #3d5ddb;
 }
-.main-v{
+
+.main-v {
     height: 830px;
     width: 100%;
     background-size: cover;
 }
-.mainTitle{
+
+.mainTitle {
     color: #ffbf00;
     text-align: center;
-    font-size: 100px;
-    margin: 200px;
+    width: 63%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 180px;
 }
-.main-v p{
+
+.main-v p {
     color: white;
     text-align: center;
+    font-family: 'Futura-Med';
+    font-style: italic;
+    font-size: 50px;
+    margin-top: 30px;
 }
 
 /*body*/
-.title{
+.title {
     color: #3d5ddb;
-    font-size: 40px;
+    font-size: 53px;
     text-align: center;
-    margin:50px;
+    margin: 50px;
+    margin-top: 0;
+    font-family: 'Futura-Med';
 }
-body{
+
+body {
     width: 100%;
 }
 
 /*intro*/
-.rightBox{
-    width: 550px;
-    float: left;
-}
-.leftBox{
-    width: 550px;
-    float: left;
-    
-   
-}
-p{
-    line-height: 2.5em;
-    font-size: 15px;
-    padding: 30px 80px;
-}
-.introduction{
-   
-}
-.introduction #img1{
+.rightBox {
     width: 450px;
-    height: 350px;
     float: left;
-   
+    margin-left: 50px;
 }
-.introduction #img2{
+
+.leftBox {
     width: 450px;
+    float: left;
+
+
+}
+
+.introduction p {
+    line-height: 2em;
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left:25px;
+    font-family:'ヒラギノ角ゴ Pro W3';
+}
+
+.introduction {
+    padding-top: 50px;
+}
+
+.introduction #img1 {
+    width: 500px;
+    float: left;
+
+}
+
+.introduction #img2 {
+    width: 500px;
+    float: right;
+
+}
+
+.intro1 {
+    display: auto;
+    margin: 20px 190px;
+    /* background-color: lightpink;*/
     height: 350px;
-    
 }
-.intro1{
-    display:auto;
-    margin: 0 200px;
-   /* background-color: lightpink;*/
-    height: 450px;
-}
-.intro2{
-    display:auto;
-    margin: 0 200px;
-    height: 450px;
+
+.intro2 {
+    display: auto;
+    margin: 0 190px;
+    padding-bottom: 100px;
+    height: 350px;
     /*background-color: hotpink;*/
 }
-.btn{
+
+.btn {
     text-decoration: none;
+    font-family: 'Futura-Med';
     color: #fff;
     padding: 10px 40px;
     border-radius: 10px;
-    margin: 100px;
+    margin: 0 100px;
     font-size: 20px;
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: 0 0 12px gray;
 }
-#bbtn{
+
+#bbtn {
     background-color: #3d5ddb;
     border: 1px solid #3d5ddb;
 }
-#ybtn{
+
+#ybtn {
     background-color: #ffbf02;
     border: 1px solid #ffbf02;
 }
+
 /*course*/
 
-.courses{
+.courses {
     background-color: #d5e6f9;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
 }
-.container{
-    display:flex;
+
+.particles {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+
+.container {
+    display: flex;
     flex-flow: row wrap;
+    padding: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
-.container2{
-    display:flex;
+
+.container2 {
+    display: flex;
     flex-flow: row wrap;
     align-content: center;
+    padding: 0 200px;
+    justify-content: center;
+    align-items: center;
 }
-.item{
-    width: 200px;
+
+.item {
+    width: 250px;
+    height: 350px;
     background-color: #fff;
-    margin: 20px;
+    margin: 20px 10px;
     border: 1px;
-    border-radius: 20px;
+    border-radius: 10px;
+
 }
-.item img{
-    
-    padding: 0 30px;
+
+.item img {
+    margin-bottom: 80px;
+    margin: 40px auto;
+    display: block;
+    height: 110px;
 }
-.btn2{
+
+.item h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn2 {
+    display: block;
     text-decoration: none;
     color: #fff;
-    padding: 10px 40px;
-    border-radius: 10px;
-    margin: 10px;
-    font-size: 10px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    margin: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Futura-Med';
 }
-.btn2:hover{
+
+.btn2:hover {
     box-shadow: 0 0 12px gray;
 }
-.btn2{
+
+.btn2 {
     background-color: #3d5ddb;
     border: 1px solid #3d5ddb;
 }
 
+#orangebtn {
+    background-color: #f1652a;
+    border-color: #f1652a;
+}
+
+#lightbluebtn {
+    background-color: #28a9df;
+    border-color: #28a9df;
+}
+
+#blackbtn {
+    background-color: #333333;
+    border-color: #333333;
+}
+
+#redbtn {
+    background-color: #fe5252;
+    border-color: #fe5252;
+}
+
+#yellowbtn {
+    background-color: #fed701;
+    border-color: #fed701;
+}
+
+#orangeredbtn {
+    background-color: #fe7536;
+    border-color: #fe7536;
+}
+
+#waterbtn {
+    background-color: #73cedd;
+    border-color: #73cedd;
+}
+
 /*image*/
+.slider {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.images {
+    padding-top: 50px;
+}
+
+.images img {
+    width: 100%;
+    padding-right: 0;
+}
 
 /*access*/
-.map{
-    display:block;
+.map {
+    display: block;
     margin: 0 auto;
 }
+
+.access {
+    padding-top: 50px;
+}
+
 /*footer*/
-footer p{
-   color: #3d5ddb;
-   text-align: center;
-   padding: 80px 0 0;
+footer p {
+    color: #3d5ddb;
+    text-align: center;
+    padding: 80px 0 30px;
+    font-family: 'Futura-Med';
+    font-size: 18px;
 }

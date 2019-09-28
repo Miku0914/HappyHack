@@ -4,114 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <title>Happy Hack</title>
-    <link rel="stylesheet" href="style.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="jquery.bgswitcher.js"></script>
+    <link href="slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="slick.min.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。">
+    
 </head>
 
 <div class="main-v" id="main-v">
     <nav>
         <ul>
-          <li><a href="#access">Access</a></li>
-          <li><a href="#images">Images</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#introduction">Introduction</a></li>
         </ul>
     </nav>
-    <h1 class="mainTitle">Happy Hack</h1>
+    <img class="mainTitle" src="logo.png" alt="">
     <p>We are Web Designers.</p>
 </div>
 
 <body>
-    <div class="introduction" id="introduction">
+    <div class="introduction fuwat" id="introduction">
         <h2 class="title">Introduction</h2>
         <div class="intro1">
-            <img src="trip.jpg" id="img1" alt="">
-            <div  class="rightBox">
-            <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
-特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
-誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
-            <a class="btn" id="bbtn" href="#main-v">会員登録</a>
+            <img src="introduction_001.jpg" id="img1" alt="">
+            <div class="rightBox">
+                <p>Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
+                    特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
+                    誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
+                <a class="btn" id="bbtn" href="#introduction">会員登録</a>
             </div>
         </div>
-        
+
         <div class="intro2">
-           <div class="leftBox">
-            <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。
-WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
-           <a class="btn" id="ybtn" href="#main-v">会員登録</a>
-           </div>
-           <img src="trip.jpg" id="img2" alt="">
+            <div class="leftBox">
+                <p>Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。
+                    WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
+                    自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。</p>
+                <a class="btn" id="ybtn" href="#introduction">会員登録</a>
+            </div>
+            <img src="introduction_002.jpg" id="img2" alt="">
         </div>
     </div>
-    
-    <div class="courses" id="courses">
+
+    <div class="courses fuwat" id="courses">
+        <div id="particles-js" class="particles"></div>
         <h2 class="title">Courses</h2>
-            <div id="particles-js">
-         <div class="container">
+        <div class="container">
             <div class="item">
                 <img src="html.png" alt="">
                 <h3>HTMLコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="orangebtn" href="#courses">このコースを受ける</a>
             </div>
-            
+
             <div class="item">
                 <img src="css.png" alt="">
                 <h3>CSSコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="lightbluebtn" href="#courses">このコースを受ける</a>
             </div>
-            
+
             <div class="item">
                 <img src="unity.png" alt="">
                 <h3>Unityコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="blackbtn" href="#courses">このコースを受ける</a>
             </div>
-            
+
             <div class="item">
                 <img src="ruby.png" alt="">
                 <h3>Rubyコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="redbtn" href="courses">このコースを受ける</a>
             </div>
-            
+
         </div>
         <div class="container2">
             <div class="item">
                 <img src="js.png" alt="">
                 <h3>JavaScriptコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="yellowbtn" href="#courses">このコースを受ける</a>
             </div>
-            
+
             <div class="item">
                 <img src="swift.png" alt="">
                 <h3>Swiftコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="orangeredbtn" href="#courses">このコースを受ける</a>
             </div>
-            
+
             <div class="item">
                 <img src="go.png" alt="">
                 <h3>Goコース</h3>
-                <a class="btn2" href="#main-v">このコースを受ける</a>
+                <a class="btn2" id="waterbtn" href="#courses">このコースを受ける</a>
             </div>
-            
-            
+
+
         </div>
-     </div>
+
     </div>
-    
-    <div class="images" id="images">
+
+
+    <div class="images fuwat" id="images">
         <h2 class="title">Images</h2>
-       
+        <ul class="slider">
+            <li><a href="#images"><img src="hero.jpg" alt=""></a></li>
+            <li><a href="#images"><img src="PC.jpg" alt=""></a></li>
+            <li><a href="#images"><img src="introduction_001.jpg" alt=""></a></li>
+            <li><a href="#images"><img src="introduction_002.jpg" alt=""></a></li>
+            <li><a href="#images"><img src="DESKTOP.jpg" alt=""></a></li>
+        </ul>
     </div>
-    
-    <div class="access" id="access">
+
+    <div class="access fuwat" id="access">
         <h2 class="title">Access</h2>
-        <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52485.01023827606!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1569338092647!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52485.01023827606!2d135.492449!3d34.697281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1569338092647!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
-     <script>
+    <script>
         jQuery(function($) {
             $('.main-v').bgSwitcher({
-                images: ["trip.jpg", "taiko.jpg", "emolight.jpg"],
+                images: ["hero.jpg", "DESKTOP.jpg", "PC.jpg", "introduction_001.jpg", "introduction_002.jpg"],
                 interval: 6000,
                 loop: true,
                 shuffle: true,
@@ -119,11 +132,35 @@ WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広
                 duration: 500,
                 easing: "swing" // linear,swing
             });
+
+            $('.slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: false,
+                arrows: true,
+                dots: true,
+            });
         });
 
     </script>
-<script src="particles.min.js"></script>
-<script src="app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+
+    </script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 <footer>
@@ -131,9 +168,3 @@ WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広
 </footer>
 
 </html>
-
-
-
-
-
-
