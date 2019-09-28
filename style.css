@@ -2,29 +2,44 @@
 * {
     margin: 0px;
     padding: 0;
-    font-family: inherit;
 
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
 }
 
 @font-face {
     font-family: 'Futura-Boo';
     src: url(Futura-Boo.ttf);
+}
 
+@font-face {
     font-family: 'Futura-LigObl';
     src: url(Futura-LigObl.ttf);
+}
 
+@font-face {
     font-family: 'Futura-Bol';
     src: url(Futura-Bol.ttf);
+}
 
+@font-face {
     font-family: 'Futura-Lug';
     src: url(Futura-Lig.ttf);
+}
 
+@font-face {
     font-family: 'Futura-BooObl';
     src: url(Futura-BooObl.ttf);
+}
 
+@font-face {
     font-family: 'Futura-MedObl';
     src: url(Futura-MedObl.ttf);
+}
 
+@font-face {
     font-family: 'Futura-Med';
     src: url(Futura-Med.ttf);
 }
@@ -78,6 +93,14 @@ nav li {
     float: right;
 }
 
+@media screen and (max-width: 480px) {
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+}
+
 nav li a {
     text-decoration: none;
     color: #fff;
@@ -95,6 +118,13 @@ nav {
 
 }
 
+@media screen and (max-width: 480px) {
+    nav {
+        display: none;
+
+    }
+}
+
 nav a:hover {
     color: #3d5ddb;
 }
@@ -103,15 +133,36 @@ nav a:hover {
     height: 830px;
     width: 100%;
     background-size: cover;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .main-v {
+        max-width: 100%;
+        height: 896px;
+        width: 100%;
+        background-size: cover;
+        position: relative;
+    }
+}
+
+.titles {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+
 }
 
 .mainTitle {
     color: #ffbf00;
     text-align: center;
-    width: 63%;
+    width: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 180px;
 }
 
 .main-v p {
@@ -123,6 +174,13 @@ nav a:hover {
     margin-top: 30px;
 }
 
+@media screen and (max-width: 480px) {
+    .main-v p {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
 /*body*/
 .title {
     color: #3d5ddb;
@@ -131,6 +189,16 @@ nav a:hover {
     margin: 50px;
     margin-top: 0;
     font-family: 'Futura-Med';
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 20px;
+        text-align: center;
+        margin: 50px;
+        margin-top: 0;
+        font-family: 'Futura-Lig';
+    }
 }
 
 body {
@@ -144,19 +212,33 @@ body {
     margin-left: 50px;
 }
 
+
 .leftBox {
     width: 450px;
     float: left;
+}
+
+@media screen and (max-width: 480px) {
+    .rightBox {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
 
 
+    .leftBox {
+        padding-top: 300px;
+        width: 100%;
+        float: none;
+    }
 }
 
 .introduction p {
     line-height: 2em;
     font-size: 16px;
     padding-top: 30px;
-    padding-left:25px;
-    font-family:'ヒラギノ角ゴ Pro W3';
+    padding-left: 25px;
+    font-family: 'ヒラギノ角ゴ Pro W3';
 }
 
 .introduction {
@@ -175,6 +257,22 @@ body {
 
 }
 
+@media screen and (max-width: 480px) {
+    .introduction #img1 {
+        width: 100%;
+        float: none;
+    }
+
+    .introduction #img2 {
+        width: 100%;
+        float: none;
+    }
+
+    .introduction {
+        height: 100%;
+    }
+}
+
 .intro1 {
     display: auto;
     margin: 20px 190px;
@@ -190,14 +288,49 @@ body {
     /*background-color: hotpink;*/
 }
 
+@media screen and (max-width: 480px) {
+    .intro1 {
+        display: auto;
+        margin: 0;
+        /* background-color: lightpink;*/
+        height: 350px;
+    }
+
+    .intro2 {
+        display: auto;
+        padding-bottom: 100px;
+        height: 350px;
+        margin: 0;
+        /*background-color: hotpink;*/
+    }
+}
+
 .btn {
     text-decoration: none;
     font-family: 'Futura-Med';
+    font-weight: bold;
     color: #fff;
     padding: 10px 40px;
     border-radius: 10px;
-    margin: 0 100px;
+    margin: 0 auto;
     font-size: 20px;
+    width: 80px;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        text-decoration: none;
+        font-family: 'Futura-Med';
+        font-weight: bold;
+        color: #fff;
+        padding: 10px 40px;
+        border-radius: 10px;
+        margin: 0 auto;
+        font-size: 20px;
+        width: 80px;
+        display: block;
+    }
 }
 
 .btn:hover {
@@ -221,7 +354,13 @@ body {
     height: 100%;
     position: relative;
     z-index: 1;
-    padding: 50px 0;
+    padding: 50px;
+
+}
+
+.courses h3 {
+    color: #183c61;
+    font-size: 16px;
 }
 
 .particles {
@@ -237,15 +376,6 @@ body {
     display: flex;
     flex-flow: row wrap;
     padding: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.container2 {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    padding: 0 200px;
     justify-content: center;
     align-items: center;
 }
@@ -269,7 +399,8 @@ body {
 
 .item h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .btn2 {
@@ -283,6 +414,7 @@ body {
     font-size: 14px;
     text-align: center;
     font-family: 'Futura-Med';
+    font-weight: bold;
 }
 
 .btn2:hover {
@@ -292,6 +424,73 @@ body {
 .btn2 {
     background-color: #3d5ddb;
     border: 1px solid #3d5ddb;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .courses {
+        background-color: #d5e6f9;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        padding: 0;
+        margin-top: 500px;
+
+    }
+
+    .item {
+        width: 150px;
+        height: 250px;
+        background-color: #fff;
+        margin: 20px 10px;
+        border: 1px;
+        border-radius: 10px;
+
+    }
+
+    .item img {
+        margin-bottom: 40px;
+        margin: 20px auto;
+        display: block;
+        height: 120px;
+    }
+
+    .item h3 {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    .btn2 {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+        margin: 10px;
+        font-size: 5px;
+        text-align: center;
+        font-family: 'Futura-Med';
+        font-weight: bold;
+    }
+
+    .btn2:hover {
+        box-shadow: 0 0 12px gray;
+    }
+
+    .btn2 {
+        background-color: #3d5ddb;
+        border: 1px solid #3d5ddb;
+    }
 }
 
 #orangebtn {
@@ -350,6 +549,12 @@ body {
 .map {
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        width: 100%;
+    }
 }
 
 .access {
