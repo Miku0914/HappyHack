@@ -269,7 +269,7 @@ body {
     .introduction #img2 {
         width: 90%;
         float: none;
-        padding: 100px 20px 20px;
+        padding: 200px 20px 20px;
         float: none;
         margin: 0;
     }
@@ -377,7 +377,7 @@ body {
     position: relative;
     z-index: 1;
     padding: 50px;
-    margin-top: 400px;
+    margin-top: 0px;
 }
 
 .courses h3 {
